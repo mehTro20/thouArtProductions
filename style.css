@@ -1,8 +1,12 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 
-#page-wrapper {
+.page-wrapper {
     position: relative;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    display: grid;
 }
 
 .welcome-section {
@@ -96,6 +100,8 @@
   }
   #about{
       align-items: center;
+      display: grid;
+      grid-column: auto;
   }
   .about {
     display: flex;
@@ -136,15 +142,6 @@
     font-weight: 700;
   }
 
-  /* @media (min-width: 800px){
-    #products {
-        display: flex;
-    }
-    .product {
-        flex-direction: row;
-    }
-  } */
-
 
   @media (min-width: 1000px){
   #services {
@@ -168,8 +165,13 @@
   }
 
   #about-container {
-    align-self: center;  
+    
+    align-items: center;  
     width: 70%;
-    border: 1px solid rgb(238, 219, 219);
-    box-shadow: #756585;
+    border: 1px solid rgba(167, 151, 151, 0.329);
+    box-shadow: 0 0 5px #5d6666,
+                0 0 25px #617172,
+                0 0 50px #3e4f50,
+                0 0 100px #0e0e0e;
+    border-radius: 6px;
   }
